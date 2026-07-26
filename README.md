@@ -30,6 +30,13 @@ SKN34-2nd-4Team/
 │   ├── 03_classification.ipynb
 │   ├── 04_regression.ipynb
 │   └── 05_clustering.ipynb
+├── dashboard/
+│   └── app.py
+├── src/
+│   ├── README.md
+│   ├── classification.py
+│   ├── regression.py
+│   └── clustering.py
 └── outputs/
     └── README.md
 ```
@@ -55,6 +62,41 @@ jupyter lab
 5. `05_clustering.ipynb`
 
 `00_project_roadmap.ipynb`는 역할 분담과 실행 계획을 정리한 문서입니다.
+
+## 모델 코드 실행
+
+노트북의 모델링 내용을 공부하기 쉬운 독립 Python 파일로 분리했습니다.
+
+```bash
+source project_venv/bin/activate
+
+python src/classification.py
+python src/regression.py
+python src/clustering.py
+```
+
+학습 모델은 `outputs/models/`, 평가 결과는 `outputs/reports/`에 저장됩니다.
+코드 구성과 모델별 입력 변수는 `src/README.md`에서 확인할 수 있습니다.
+
+## 성능 대시보드 실행
+
+세 모델 코드를 실행해 최신 결과를 만든 뒤 Streamlit 대시보드를 실행합니다.
+
+```bash
+source project_venv/bin/activate
+
+python src/classification.py
+python src/regression.py
+python src/clustering.py
+
+streamlit run dashboard/app.py
+```
+
+대시보드에서는 다음 내용을 확인할 수 있습니다.
+
+- 분류: Train/Test 성능과 과적합 점검, 혼동행렬, ROC 곡선
+- 회귀: Train/Test 성능과 과적합 점검, 실제값과 예측값, 잔차 분포
+- 군집: Silhouette Score, 군집 프로파일, 군집별 고객 수와 이탈률
 
 ## 데이터 계보
 
