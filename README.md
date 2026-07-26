@@ -16,13 +16,15 @@ Kaggle의 `Credit Card Customers` 데이터를 활용해 고객 이탈 위험을
 SKN34-2nd-4Team/
 ├── README.md
 ├── requirements.txt
-├── requirements-original.txt
 ├── data/
 │   ├── README.md
 │   ├── raw/
 │   │   └── BankChurners.csv
 │   └── processed/
 │       └── bankchurners_clean.csv
+├── docs/
+│   └── guides/
+│       └── git_upstream_push_pr_guide.pdf
 ├── notebooks/
 │   ├── 00_project_roadmap.ipynb
 │   ├── 01_data_load_clean.ipynb
@@ -40,6 +42,9 @@ SKN34-2nd-4Team/
 └── outputs/
     └── README.md
 ```
+
+Git의 `upstream` 설정부터 커밋, 포크 저장소 푸시, Pull Request 생성까지의 과정은
+[`docs/guides/git_upstream_push_pr_guide.pdf`](docs/guides/git_upstream_push_pr_guide.pdf)에서 확인할 수 있습니다.
 
 ## 실행 순서
 
