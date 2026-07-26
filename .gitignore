@@ -1,3 +1,18 @@
-/project_venv/
-/__pycache__/
-/.ipynb_checkpoints/
+# Virtual environments and local settings
+project_venv/
+.venv/
+.env
+
+# Python and Jupyter caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Generated artifacts
+outputs/*
+!outputs/README.md
