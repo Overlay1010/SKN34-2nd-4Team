@@ -1,3 +1,5 @@
+# 깃 테스트
+
 # 신용카드 고객 이탈 예측 프로젝트
 
 Kaggle의 `Credit Card Customers` 데이터를 활용해 고객 이탈 위험을 예측하고,
